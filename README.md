@@ -26,4 +26,4 @@ helm upgrade --install nginx bitnami/nginx <-- If not existing create deployment
 helm install bitnami/nginx --generate-name --name-template "kthamel-{{randAlpha 5 | lower}}" <-- Generate name for deployment
 helm install knginx-3 bitnami/nginx --wait <-- Wait till the pods up and running
 helm install knginx-3 bitnami/nginx --atomic <-- If pods didn't came running state, rollback to previous version
-git 
+helm create demo-nginx <-- Generate helm template according to the Nginx configuration
